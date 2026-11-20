@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=77.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ollama-aidebug"
+version = "0.1.0"
+description = "Local AI-powered CLI Python runner and interactive debugger backed by Ollama"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "varunms89", email = "198361202+varunms89@users.noreply.github.com" },
+]
+requires-python = ">=3.9"
+dependencies = []
+keywords = [
+  "python",
+  "debugger",
+  "ai",
+  "ollama",
+  "cli",
+  "local-llm",
+  "traceback",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Debuggers",
+]
+
+[project.urls]
+Homepage = "https://github.com/varunms89/aidebug"
+Repository = "https://github.com/varunms89/aidebug"
+Issues = "https://github.com/varunms89/aidebug/issues"
+
+[project.scripts]
+aidebug = "aidebug.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
